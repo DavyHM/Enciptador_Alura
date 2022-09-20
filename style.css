@@ -1,0 +1,75 @@
+
+.logo{
+    width: 10%;
+    margin-left: 5%;
+}
+main{
+    display: flex;
+    margin: 2% 5%;
+    height: 80%;
+
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right top, #441f34, #4a2542, #4c2c52, #4b3563, #443f74, #454b83, #465792, #4463a1, #5474b2, #6585c4, #7596d5, #86a8e7);
+    
+}
+
+.input-caja{
+    width: 60%;
+    margin-right: 5%;
+    background: pink;
+    
+}
+
+h5{
+    margin-left: 5%;
+}
+
+.input-texto{
+
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    resize: none;
+    
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.encriptar{
+    background-color: blue;
+    color: white;
+}
+
+.desencriptar{
+    background-color: blue;
+    color: white;
+}
+
+
+.mensaje-caja{
+    
+    width: 35%;
+    border-radius: 10px;
+    
+    background: red;
+    
+}
+
+.mensaje{
+    position: relative;
+}    
+
+.copiar{
+    position: relative;
+    
+    margin-top: 20px;
+}
