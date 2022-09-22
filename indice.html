@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Encriptador</title>
+    <title>Encriptador - Alura</title>
+    <link rel="stylesheet" href="stilo_01.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <img class="logo" src="imagenes/alura-logo.png" alt="Logo de Alura Latam">
+        <div class="logo">
+            <img src="imagenes/alura-logo.png" alt="logo_alura">
+        </div>
+        <div class="encabezado">
+            <h1>Primer Sprint</h1>
+        </div>
+        
     </header>
     <main>
-        <section class="input-caja">
-            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea> 
-            <div class="indicaciones">
-                <h5>Ingresar sólo letras en minúscula y sin acentos.</h5>
-            </div>
+        <div class="ingreso-texto-caja">
+            <textarea id="texto-entrada" placeholder="Escriba aqui su texto"></textarea>
+            <p>Ingrese sólo letras en minúscula sin tilde</p>
             <div class="botones">
-                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
-        </section>
-        <section class="mensaje-caja">
-            <textarea class="mensaje" cols="20" rows="8"></textarea>
-            <button class="copiar" onclick="btnCopiar()">Copiar</button>
-        </section>
+        </div>
+        <div class="salida-texto-caja">
+            <textarea id="texto-salida"></textarea>
+            <br>
+            <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+        </div>
     </main>
     <script src="script.js"></script>
+    <footer>
+        <small>Elaborado por Davy</small>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,161 @@
+body{
+    font-family: 'Indie Flower';
+    background-color: skyblue; 
+}
+header{
+    display: flex;
+    height: 10vh;   
+}
+.logo{
+    width: 20vw;
+    position: relative;
+}
+.logo img{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    max-width: 70px;
+}
+.encabezado{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 4vmax;
+    text-shadow: 2px 2px 10px blue;
+}
+h1::first-letter{
+    color: blue;
+    text-shadow: 2px 2px 10px green ;
+}
+/**/
+main{
+  
+    /* background-color: bisque; */
+    height: 76vh;
+    display: flex;
+}
+.ingreso-texto-caja{
+    width: 60vw;
+    height: 76vh;
+    position: relative;
+  
+}
+
+#texto-entrada{
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    border-radius: 10px;
+    left: 5% ;
+    top: 10px;
+    font-size: 20px;
+}
+
+main p{
+    margin-left: 5%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.botones{
+    left: 5%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    
+}
+.btnEncriptar{
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Indie Flower' ;
+    font-size: large;
+    background-color: brown;
+    color: white;
+    
+    cursor: pointer;
+}
+
+.btnDesencriptar{
+    width: 150px;
+    padding: 10px;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Indie Flower' ;
+    font-size: large;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+.btnDesencriptar:hover, .btnEncriptar:hover, .btnCopiar:hover{
+    clear: both;
+    background-color: red;
+    font-size: larger;
+    border: 0;
+}
+.salida-texto-caja{
+    /* background-color: palevioletred; */
+    width: 40vw;
+    position: relative;
+}
+
+#texto-salida{
+    width: 35vw;
+    height: 50vh;
+    position: relative;
+    border-radius: 10px;
+    left: 5% ;
+    top: 10px;
+    font-size: 20px;
+    border: 0;
+    background: rgba(0,0,0, 0%);
+    background-image: url(https://c.tenor.com/szH2qsISnzMAAAAi/emoji-thinking.gif);
+    background-repeat: no-repeat;
+}
+
+.btnCopiar{
+    position: absolute;
+    bottom: 5px;
+    padding: 10px;
+    right: 30px;
+    border-radius: 10px;
+    width: 150px;
+    font-weight: bold;
+    font-family: 'Indie Flower' ;
+    font-size: large;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+footer{
+    height: 10vh;
+    text-align: center;
+    position: relative;
+}
+footer small{
+    position: absolute;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 580px){
+    main{
+        display: inline;
+    }
+    .ingreso-texto-caja , .salida-texto-caja{
+        width: 100vw;
+    }
+    #texto-entrada, #texto-salida{
+        width: 80vw;
+        height: 40vh;
+    }
+    .salida-texto-caja{
+        display: block;
+    }
+}
